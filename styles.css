@@ -1,0 +1,14 @@
+nav {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: write;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue
+}
