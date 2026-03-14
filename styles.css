@@ -34,8 +34,11 @@ nav a {
 /*main*/
 
 main {
-    width: 80%;
+    max-width: 800px;
     margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    color: #000;
 }
 
 h1 {
@@ -51,20 +54,48 @@ main img {
     border: 1px solid black;
     padding: 5px;
     margin: 5px;
+    ,
+    box-shadow: 5px 5px 10px #333;
 }
 
 aside {
     width: 200px;
     margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #eee;
+    color: #333;
+
+}
+
+aside img {
+    width: 200px;
+    height: auto;
 }
 
 aside {
     padding: 0;
 }
 
+section {
+    max-width: 600px;
+    color: #222;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #e0f7fa;
+
+}
+
+p {
+    padding: 0;
+
+}
+
 footer {
     margin-top: 20px;
-    border-top: 1px solid #ccc;
+    background-color: #333;
     text-align: center;
+    color: white;
     padding-top: 10px;
+    border-top: 1px solid #333;
 }
