@@ -28,6 +28,8 @@ nav ul {
 
 nav a {
     color: white;
+    padding: 5px;
+    display: block;
     text-decoration: none;
 }
 
