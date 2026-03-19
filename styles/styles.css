@@ -61,7 +61,7 @@ main img {
 }
 
 p {
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 aside {
@@ -85,7 +85,7 @@ aside h2 {
     margin-top: 25px;
     position: absolute;
     top: 10px;
-    left: 130px;
+    left: 60px;
 
 }
 
@@ -97,12 +97,12 @@ aside img {
 
 /*Class selectors*/
 .box {
+
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, .1);
     padding: 1rem;
     background-color: #eee;
     color: #000;
-
 }
 
 .indent {
