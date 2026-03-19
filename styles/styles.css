@@ -6,10 +6,15 @@
 
 /*Body*/
 body {
-    background-color: cadetblue;
+    background-color: white;
     padding: 10px;
 
     font-family: Roboto, Arial, sans-serif;
+}
+
+main {
+    flex: 1;
+    /* faz o conteúdo crescer e empurrar o footer para baixo */
 }
 
 nav {
@@ -19,29 +24,40 @@ nav {
 
 nav a {
     color: white;
-    padding: 10px;
-    display: block;
+    padding: 15px;
+    display: inline-block;
+    /* Alinha Home, Rafting, etc, lado a lado */
+    text-decoration: none;
 }
 
 h1 {
     color: steelblue;
-    padding: 5rem;
+    padding: 1rem;
+    margin-left: 1rem;
 }
 
 main {
-    max-width: 640;
+    max-width: 840px;
+    /* Adicione o 'px' aqui para funcionar */
+    margin: 0 auto;
+    background-color: white;
+    /* Para dar o efeito de papel sobre o fundo */
+    padding: 20px;
 }
 
 /*image*/
 main img {
-    width: 150px;
+    width: 80px;
     height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    margin: 0 0 1rem 1rem;
-    margin-bottom: 15px;
-    box-shadow: 0 0 30px gray;
+    margin-top: 5px;
+    margin: 0 auto 20px;
+    /* centraliza e dá espaço abaixo */
     float: right;
+    /* Faz o texto subir e ficar ao lado da foto */
+    margin-left: 10px;
+    margin-bottom: 60px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 p {
@@ -55,25 +71,28 @@ aside {
 
 }
 
-aside img {
-    width: 200px;
-    height: auto;
+aside {
+    width: 300px;
+    float: left;
+    /* No modelo original, as caixas informativas ficam à esquerda ou fluem com o texto */
+    text-align: center;
+    margin: 20px 0;
 }
 
 aside h2 {
+    /* Remova o position: absolute! Use margens simples */
+    color: #333;
+    margin-top: 25px;
     position: absolute;
-    top: 67px;
-    left: 150px;
+    top: 10px;
+    left: 130px;
 
 }
 
-footer {
-    margin-top: 20px;
-    background-color: #333;
-    text-align: center;
-    color: white;
-    padding-top: 10px;
-    border-top: 1px solid #333;
+aside img {
+    width: 100%;
+    /* Faz a imagem ocupar toda a largura da caixa cinza */
+    height: auto;
 }
 
 /*Class selectors*/
@@ -88,4 +107,14 @@ footer {
 
 .indent {
     padding-left: 2rem;
+}
+
+footer {
+    clear: both;
+    margin-top: 20px;
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    border-top: 1px solid #333;
 }
