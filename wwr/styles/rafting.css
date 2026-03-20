@@ -1,9 +1,9 @@
 /* root variables for the project */
 :root {
     --primary-color: #055a05;
-    --secondary-color: #f4a261;
+ 
     --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+   
     --heading-font: "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -18,12 +18,17 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+<<<<<<< HEAD
     background: linear-gradient(to bottom, #ffffff, #e9c46a);
+=======
+
+>>>>>>> 89c6ed1897bf69d08d9993e6842a89e506d9a806
 }
 
 header,
 main,
 footer {
+    
     max-width: 840px;
     margin: 0 auto;
 }
