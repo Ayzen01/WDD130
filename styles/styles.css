@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+header,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 /*Body*/
 body {
     background-color: white;
     padding: 10px;
-
-    font-family: Roboto, Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 main {
@@ -24,21 +30,40 @@ main {
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
-    color: white;
-    padding: 15px;
-    display: inline-block;
-    /* Alinha Home, Rafting, etc, lado a lado */
+    color: #fff;
+    padding: 0.5rem;
+    display: block;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+
 }
 
 h1 {
     color: steelblue;
     padding: 1rem;
     margin-left: 0.1rem;
+    border-bottom: 2px solid steelblue;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.3fr 500px;
+    gap: 5px;
 }
 
 /*image*/
@@ -46,7 +71,8 @@ main img {
     width: 120px;
     height: auto;
     float: right;
-    margin: 0 auto 20px;
+    margin: 0 0 1em 1em;
+    margin-top: 0, 0, 1em, 1em;
     margin-left: 15px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -57,6 +83,23 @@ p {
     margin: 1rem 0;
     text-align: left;
     margin-left: 1rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside {
@@ -98,18 +141,34 @@ aside a {
 }
 
 aside img {
-
+    width: 200px;
     height: auto;
     float: right;
+}
+
+.relative-container {
+    position: relative;
+}
+
+.relative-container h2 {
+    position: absolute;
+    top: 55px;
+    left: 150px;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.padding-left {
+    padding-left: 2em;
 }
 
 /*Class selectors*/
 .box {
 
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    margin: 1em;
+    border: 1px solid #333;
     padding: 1rem;
-    background-color: #eee;
+    background-color: silver;
     color: #000;
 }
 
@@ -117,54 +176,10 @@ aside img {
     padding-left: 2rem;
 }
 
-/*mudei isso*/
-.flag-box {
-    position: relative;
-    display: inline-block;
-}
-
-.flag-box img {
-    width: 270px;
-    height: auto;
-    display: block;
-}
-
-.flag-text {
-    position: absolute;
-    top: 20%;
-    /* ajusta a altura para ficar na faixa amarela */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: blue;
-    /* cor do texto para contraste */
-    font-weight: bold;
-    font-size: 1.2rem;
-    background: rgba(255, 255, 255, 0.3);
-    /* opcional: fundo semitransparente */
-    padding: 2px 6px;
-    border-radius: 4px;
-}
-
-.flag-box h2 {
-    position: absolute;
-    bottom: 10px;
-    /* posição dentro da imagem */
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    /* cor do texto */
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.4);
-    /* fundo semitransparente opcional */
-    padding: 2px 6px;
-    border-radius: 4px;
-}
-
-/*ate aqui*/
 footer {
     clear: both;
     margin-top: 20px;
-    background-color: #333;
+    background-color: steelblue;
     text-align: center;
     color: white;
     padding-top: 10px;
