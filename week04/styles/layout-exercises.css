@@ -23,18 +23,23 @@ div {
 
 .flex {
     background-color: #aba;
-    /* write declarations here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .grid {
     background-color: #abb;
-    /* enter declarations here */
-
+    display: grid;
+    place-items: center;
 }
 
 .container2 {
-    /* write declarations here */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
@@ -44,16 +49,41 @@ div {
 }
 
 .container3 {
-    /* write declarations here */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 .columns-3 {
-    /* write declaration here */
+    grid-column: 1/4;
 
 }
 
 .three {
     margin: .25rem;
     background-color: #abd;
+}
+
+.box {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #eee;
+
+    color: #333;
+
+}
+
+aside {
+    position: relative;
+    text-align: center;
+}
+
+/*aside.box {}*/
+
+/* Imagem dentro do aside */
+aside img {
+    width: 150px;
+    height: auto;
+    float: right;
 }
