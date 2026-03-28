@@ -1,7 +1,7 @@
 /* root variables for the project */
 :root {
     --primary-color: #055a05;
-
+    --secondary-color: #2a9d8f;
     --accent1-color: #264653;
 
     --heading-font: "Times New Roman", serif;
@@ -30,11 +30,30 @@ footer {
     margin: 0 auto;
 }
 
-main {
-    padding: 20px;
+header {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+aside {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Overlay Positioning */
@@ -106,4 +125,13 @@ h2 {
 p {
     margin-bottom: 15px;
     line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    color: white;
 }
