@@ -27,7 +27,7 @@ body {
 }
 
 nav {
-    background-color: steelblue;
+    background-color: black;
     padding: 10pix;
     display: flex;
     justify-content: space-evenly;
@@ -47,7 +47,7 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
+    color: black;
     padding: 1rem;
     margin-left: 0.1rem;
     border-bottom: 2px solid steelblue;
@@ -121,7 +121,7 @@ p {
 footer {
     clear: both;
     margin-top: 3rem;
-    background-color: darkblue;
+    background-color: black;
     text-align: center;
     color: white;
     padding-top: 0.2px;
