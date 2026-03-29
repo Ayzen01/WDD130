@@ -80,12 +80,12 @@ h2 {
 }
 
 aside img {
-    width: 150px;
-    height: auto;
+    width: auto;
+    height: 250;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-
+    object-fit: cover;
 }
 
 main img {
