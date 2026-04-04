@@ -30,6 +30,10 @@ footer {
     margin: 0 auto;
 }
 
+.map-frame {
+    border: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
