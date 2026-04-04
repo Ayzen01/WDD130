@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 - White Water Rafting - About Us</title>
+    <title>Contact Us | White Water Rafting</title>
     <meta name="description"
-      content="Learn more about our history an the adventure that wait for you.">
+      content="Contact information and message form for White Water Rafting Company">
     <meta name="author" content="Emanoel R Morais">
     <meta name="keywords" content="rafting, adventure, history, white water">
     <link rel="stylesheet" href="styles/rafting.css">
@@ -25,87 +25,56 @@
 
 
     <main>
-        <h2>About Us</h2>
-        <p>We are a passionate rafting company dedicated to bringing adventure lovers closer to
-            nature.
-            Our mission is to provide safe, thrilling, and unforgettable experiences on the river,
-            guided by
-            a team of professionals who share a love for the outdoors.</p>
+        <h1>Contact Us</h1>
+        <div class="company-info">
+            <p><strong>Address:</strong> 123 Main River Street, Kolob, California</p>
+            <p><strong>Phone:</strong> +1 981 123 9459</p>
+            <p><strong>Email:</strong> info@whitewater.com</p>
 
-        <h2>Our Goals</h2>
-        <p>Our goal is to inspire people to embrace adventure while ensuring safety and respect for
-            the
-            environment.
-            We strive to grow as a leading rafting company, offering unique journeys that create
-            lasting
-            memories
-            for every guest who joins us on the rapids.</p>
-
-        <div class="hero">
-            <img src="images/rafting17.jpg" alt="Rafting adventure background">
-            <h1> White Water Rafting </h1>
-            <article>
-
-                <img src=" images/rafting.jpg" alt="Happy rafter on the river">
-
-                <p> Welcome to our
-                    company! We are dedicated to providing the best white
-                    water rafting experiences. Our team of expert guides is coimmited
-                    to your safety and enjoyment on the water.</p>
-            </article>
-
-
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_LINK_HERE" width="600"
+                  height="450" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
+
         <section>
-            <h2> History</h2>
-            <p> Founded in 1999, our company has grown from a small family
-                business to a premier rafting detination. We are spent decades exploring
-                the river and sharing our passion with thousands of guests .</p>
+            <h2> Send us a mensage</h2>
+            <form action="#" method="post">
+                <div class="form_item">
+                    <label for="user_name">Name</label>
+                    <input type="text" id="user_name" name="" user_name" required>
+                </div>
 
-        </section>
-        <aside class="box sidebar">
-            <img src="images/profile1.jpg" alt="Emanoel" width="390" class="profile">
-            <ul>
-                <li>Safety First</li>
-                <li>Experienced Guides</li>
-                <li>Unforgettable Memories</li>
-            </ul>
-        </aside>
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <p>Get ready for the thrill of a lifetime as you navigate the rapids with our
-                professional team.</p>
 
-            <figure>
-                <img src="images/rafitin3.jpg" alt="Rafting group on the river">
-                <figcaption>Teamwork on the rapids</figcaption>
-            </figure>
+                <div class="form_item">
+                    <p>Porpouse of Mensage:</p>
+                    <label><input type="radio" name="purpose" value="general" checked> General
+                        Inquiry</label>
+                    <label><input type="radio" name="purpose" value="general" checked> Reservation
+                        Question</label>
+                    <label><input type="radio" name="purpose" value="general" checked> Website
+                        Feedback</label>
+                </div>
 
-            <figure>
-                <img src="images/rafiting4.jpg" alt="Rafting boat in action">
-                <figcaption>Thrilling adventure</figcaption>
-            </figure>
+                <div class="form_item">
+                    <label for="=mensage">Mensage</label>
+                    <textarea id="mensage" name="mensage" rows="4" required></textarea>
+                </div>
 
-            <figure>
-                <img src="images/rafting5.jpg" alt="Rafting guide leading">
-                <figcaption>Experienced guides</figcaption>
-            </figure>
+                <div class="form_item">
+                    <label><input type="checkbox" name="subscribe" value="yes"> Please subscribe me
+                        to the
+                        monthly newsletter</label>
+                </div>
 
-            <figure>
-                <img src="images/rafting6.jpg" alt="Rafting family trip">
-                <figcaption>Fun for all ages</figcaption>
-            </figure>
 
-            <figure>
-                <img src="images/rafting7.jpg" alt="Rafting scenic view">
-                <figcaption>Nature and excitement</figcaption>
-            </figure>
-
+                <button type="submit">Submit Mensage</button>
+            </form>
         </section>
 
     </main>
     <footer>
-        <p>© 2026 Emanoel R Morais| All rights reserved|White Water Rafting</p>
+        <p>© 2026 Emanoel R Morais | All rights reserved | White Water Rafting</p>
 
         <!-- meta description -->
         <nav class="socialmedia">
