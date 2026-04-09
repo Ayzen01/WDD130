@@ -1,83 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Emaoel R Morais | WDD 130 Personal HomePage </title>
-    <meta name="description" content="Emanoel R Morais BYU Idaho WDD 130 course by Emanoel ">
+    <title>White Water Rafting | Trips</title>
+    <meta name="description" content="Explore our adventure rafting trips and special discounts.">
     <meta name="author" content="Emanoel R Morais">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
+        <img src="images/splash.png" alt="Rafting Company Logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="rafting.html">Rafting Website</a>
-            <a href="https://facebook.com">Facebook</a>
-            <a href="https://www.linkedin.com">Linked in</a>
-
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
-    <div class="grid">
+    <main class="home-grid">
+        <section class="hero">
+            <img src="images/rafting.jpg" alt="Rafting Adventure" class="hero-img">
+            <div class="hero-text">
+                <h1>Splash White Water Rafting</h1>
+                <p>Feel the adrenaline and freedom in the most incredible rapids of Brazil.</p>
+                <a href="trips.html" class="cta-button">See Our Trips</a>
+            </div>
+            </div>
+        </section>
 
-        <aside class="box relative container">
-            <h2>Brasil</h2>
-            <img src="images/Brasil.jpg" alt="Brasil landscape" width="200">
+        <section class="home-content">
+            <aside class="promo-box">
+                <h2>Our Mission</h2>
+                <img src="images/unforgetable3.jpg" alt="Rafting">
+                <p>Provide unforgettable experiences in nature with maximum safety and professional
+                    guides.</p>
+            </aside>
 
-            <p>The largest country in South America, known for its rich culture, diverse
-                landscapes, and vibrant cities. "</p>
-        </aside>
+            <aside class="promo-box">
+                <h2>Adventure</h2>
+                <img src="images/rafiting4.jpg" alt="Rafting">
+                <p>Explore the natural beauty of our country through sport.</p>
+            </aside>
+        </section>
+        <section class="newsletter">
+            <h2>Join our Newsletter!</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-        <main>
-            <img src="images/profile.jpg" alt="Emanoel R Morais" width="800" class
-              image="main-image">
-            <h1>Emanoel R Morais | WDD 130</h1>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <p>
-                Hello! My name is Emanoel I'm from Brasil,I just started college this year, and I'm
-                diving
-                into the world of web development. This course
-                focuses on hands-on activities that bring concepts to life, helping us build real
-                skills. By the
-                end, students are expected to understand the fundamentals of the web and explore the
-                exciting field
-                of web design and development.
-            </p>
-            <ul class="box padding-left">
-                <li><a href="https://newsroom.churchofjesuschrist.org/media/960x540/Idaho-Falls-Idaho-Temple1a.jpg"
-                      target="_blank">Idaho
-                        Falls Temple</a>
-                </li>
-                <li><a href="https://newsroom.churchofjesuschrist.org/media/960x540/Medford-Oregon-Temple1.jpg"
-                      target="_blank">Medford
-                        Oregon Temple</a>
-                </li>
-                <li><a href="https://newsroom.churchofjesuschrist.org/media/960x540/Ogden_Temple_Exterior_back.jpg"
-                      target="_blank">Ogden
-                        Temple</a>
-                </li>
-            </ul>
-        </main>
-
-    </div>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Emanoel R Morais - BYU-Idaho </p>
-        <div class="social">
-            <a href="https://facebook.com/seuPerfil" target="_blank">
-                <img src="images/facebook.png" alt="Facebook" width="39">
-            </a>
-            <a href="https://linkedin.com/in/seuPerfil" target="_blank">
-                <img src="images/linkedin.PNG" alt="LinkedIn" width="37">
-            </a>
-            <a href="https://instagram.com/seuPerfil" target="_blank">
-                <img src="images/instagram.jpg" alt="Instagram" width="40">
-            </a>
-        </div>
-
+        <p>© 2026 White Water Rafting | All rights reserved | Emanoel R Morais</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook icon"
+                  width="34"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn icon"
+                  width="35"></a>
+            <a href="https://instagram.com"><img src="images/instagram.jpg" alt="Instagram icon"
+                  width="36"></a>
+        </nav>
     </footer>
 </body>
 
