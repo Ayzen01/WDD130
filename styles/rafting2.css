@@ -57,7 +57,7 @@ main {
 
 h1,
 h2 {
-    color: var(--accent-color);
+    color: #053b05;
     text-align: center;
 }
 
