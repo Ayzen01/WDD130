@@ -6,14 +6,6 @@
     margin-bottom: 30px;
 }
 
-img {
-    width: 200px;
-    height: 100px;
-    object-fit: cover;
-    /* mantém a proporção e corta se necessário */
-    object-position: center;
-}
-
 /* O container da grade */
 .discounts-grid {
     display: grid;
