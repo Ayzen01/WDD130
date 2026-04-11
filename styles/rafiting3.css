@@ -170,14 +170,58 @@ figcaption {
     color: var(--primary-color);
 }
 
-/* --- Responsividade (Para Celulares) --- */
+footer {
+    background-color: #053b05;
+    /* O verde escuro que você está usando */
+    color: white;
+    padding: 20px 5%;
+    /* Reduz a altura para não ficar tão largo */
+    display: flex;
+    /* Coloca texto e ícones lado a lado */
+    justify-content: space-between;
+    /* Texto na esquerda, ícones na direita */
+    align-items: center;
+    /* Centraliza tudo verticalmente */
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    /* Remove margens extras do parágrafo */
+    font-size: 0.9rem;
+}
+
+.socialmedia {
+    display: flex;
+    /* Coloca os ícones um ao lado do outro */
+    gap: 15px;
+    /* Espaço entre cada ícone */
+}
+
+.socialmedia a img {
+    width: 35px;
+    /* Tamanho padrão para os ícones */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.socialmedia a:hover img {
+    transform: scale(1.2);
+    /* Efeito de aumento ao passar o mouse */
+}
+
+/* Responsividade para Celular */
 @media (max-width: 768px) {
-    .hero article {
+    .history-section {
         flex-direction: column;
-        margin-top: 20px;
     }
 
-    main > h2 + p + h2 + p {
-        grid-template-columns: 1fr;
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 20px;
     }
 }

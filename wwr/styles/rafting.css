@@ -1,11 +1,9 @@
-/* --- Estilos Gerais --- */
+/* Configurações Gerais */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #fcf6e4;
-    /* Bege suave para o fundo */
-    color: #333;
 }
 
 main {
@@ -15,22 +13,21 @@ main {
 }
 
 header {
-    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 10px 50px;
+    background-color: white;
 }
 
 header img {
-    width: 90px;
+    width: 100px;
     height: auto;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--primary-green);
+    color: #053b05;
     font-weight: bold;
     margin: 0 15px;
     font-size: 1.1rem;
@@ -39,7 +36,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: var(--link-blue);
+    color: darkgreen;
     border-bottom: 2px solid var(--link-blue);
 }
 
