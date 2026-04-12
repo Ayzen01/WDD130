@@ -6,6 +6,29 @@
     margin-bottom: 30px;
 }
 
+img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    /* mantém a proporção e corta se necessário */
+    object-position: center;
+}
+
+.btn-contact {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #cc5200;
+}
+
 /* O container da grade */
 .discounts-grid {
     display: grid;
@@ -83,58 +106,10 @@
     display: block;
 }
 
-footer {
-    background-color: #053b05;
-    /* O verde escuro que você está usando */
-    color: white;
-    padding: 20px 5%;
-    /* Reduz a altura para não ficar tão largo */
-    display: flex;
-    /* Coloca texto e ícones lado a lado */
-    justify-content: space-between;
-    /* Texto na esquerda, ícones na direita */
-    align-items: center;
-    /* Centraliza tudo verticalmente */
-    margin-top: 50px;
-}
-
-footer p {
-    margin: 0;
-    /* Remove margens extras do parágrafo */
-    font-size: 0.9rem;
-}
-
-.socialmedia {
-    display: flex;
-    /* Coloca os ícones um ao lado do outro */
-    gap: 15px;
-    /* Espaço entre cada ícone */
-}
-
-.socialmedia a img {
-    width: 35px;
-    /* Tamanho padrão para os ícones */
-    height: auto;
-    transition: transform 0.3s;
-}
-
-.socialmedia a:hover img {
-    transform: scale(1.2);
-    /* Efeito de aumento ao passar o mouse */
-}
-
-/* Responsividade para Celular */
-@media (max-width: 768px) {
-    .history-section {
-        flex-direction: column;
-    }
-
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav {
-        margin-top: 20px;
+/* Ajuste para telas menores */
+@media (max-width: 900px) {
+    .discounts-grid {
+        grid-template-columns: 1fr;
+        /* Vira 1 coluna no celular */
     }
 }

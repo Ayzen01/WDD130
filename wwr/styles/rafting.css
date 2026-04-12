@@ -1,9 +1,11 @@
-/* Configurações Gerais */
+/* --- Estilos Gerais --- */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #fcf6e4;
+    /* Bege suave para o fundo */
+    color: #333;
 }
 
 main {
@@ -13,31 +15,35 @@ main {
 }
 
 header {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
-    background-color: white;
+    padding: 10px 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    color: #053b05;
 }
 
 header img {
-    width: 100px;
+    width: 90px;
     height: auto;
 }
 
 nav a {
     text-decoration: none;
-    color: #053b05;
+    color: var(--primary-green);
     font-weight: bold;
     margin: 0 15px;
     font-size: 1.1rem;
     transition: color 0.3s;
+    color: #053b05;
 }
 
 nav a:hover,
 nav a.active {
-    color: darkgreen;
+    color: var(--link-blue);
     border-bottom: 2px solid var(--link-blue);
+    color: #053b05;
 }
 
 /* --- Conteúdo Principal --- */
@@ -108,62 +114,74 @@ nav a.active {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .promo-box img {
     width: 100%;
     border-radius: 5px;
+
+}
+
+.promo-box h2,
+.promo-box p {
+    color: #053b05;
+    /* verde escuro */
 }
 
 /* --- Rodapé (Conforme solicitado) --- */
 footer {
-    background-color: white;
+    background-color: #053b05;
+    /* O verde escuro que você está usando */
+    color: white;
     padding: 20px 5%;
+    /* Reduz a altura para não ficar tão largo */
     display: flex;
+    /* Coloca texto e ícones lado a lado */
     justify-content: space-between;
+    /* Texto na esquerda, ícones na direita */
     align-items: center;
+    /* Centraliza tudo verticalmente */
     margin-top: 50px;
-    border-top: 1px solid #eee;
 }
 
 footer p {
-    flex: 1;
-    text-align: center;
     margin: 0;
-    font-weight: bold;
-    color: #053b05;
+    /* Remove margens extras do parágrafo */
+    font-size: 0.9rem;
 }
 
 .socialmedia {
     display: flex;
+    /* Coloca os ícones um ao lado do outro */
     gap: 15px;
+    /* Espaço entre cada ícone */
 }
 
-.socialmedia img {
-    width: 30px;
+.socialmedia a img {
+    width: 35px;
+    /* Tamanho padrão para os ícones */
     height: auto;
     transition: transform 0.3s;
 }
 
-.socialmedia img:hover {
+.socialmedia a:hover img {
     transform: scale(1.2);
+    /* Efeito de aumento ao passar o mouse */
 }
 
-/* --- Mobile --- */
+/* Responsividade para Celular */
 @media (max-width: 768px) {
+    .history-section {
+        flex-direction: column;
+    }
 
-    .header-container,
-    .home-content,
-    footer {
+    header {
         flex-direction: column;
         text-align: center;
     }
 
     nav {
         margin-top: 20px;
-    }
-
-    .socialmedia {
-        margin-top: 15px;
     }
 }

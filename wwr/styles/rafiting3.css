@@ -1,53 +1,63 @@
-/* Configurações Gerais */
+/* --- Configurações de Acessibilidade e Estilo Geral --- */
+:root {
+    --primary-color: #053b05;
+    /* Verde escuro para contraste */
+    --accent-color: #8b2d2d;
+    /* Vermelho terra para títulos */
+    --bg-color: #fcf6e4;
+    /* Bege claro para leitura confortável */
+    --text-color: #333;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     margin: 0;
-    padding: 0;
 }
 
 main {
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 header {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
-    background-color: white;
+    padding: 10px 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    color: #053b05;
 }
 
 header img {
-    width: 100px;
+    width: 90px;
     height: auto;
-}
-
-h1 {
-    text-align: center;
-    color: darkgreen;
 }
 
 nav a {
     text-decoration: none;
-    color: darkgreen;
+    color: --primary-color;
     font-weight: bold;
     margin: 0 15px;
     font-size: 1.1rem;
     transition: color 0.3s;
+    color: #053b05;
 }
 
 nav a:hover,
 nav a.active {
-    color: darkgreen;
+    color: var(--primary-color);
     border-bottom: 2px solid var(--link-blue);
+    color: #053b05;
 }
 
 /* --- Títulos --- */
 h2 {
-    color: darkgreen;
+    color: var(--accent-color);
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 10px;
     margin-top: 40px;
