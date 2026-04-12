@@ -21,6 +21,7 @@ header {
     align-items: center;
     padding: 10px 5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    color: #053b05;
 }
 
 header img {
@@ -35,12 +36,14 @@ nav a {
     margin: 0 15px;
     font-size: 1.1rem;
     transition: color 0.3s;
+    color: #053b05;
 }
 
 nav a:hover,
 nav a.active {
     color: var(--link-blue);
     border-bottom: 2px solid var(--link-blue);
+    color: #053b05;
 }
 
 /* --- Conteúdo Principal --- */
@@ -111,11 +114,19 @@ nav a.active {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .promo-box img {
     width: 100%;
     border-radius: 5px;
+
+}
+
+.promo-box h2,
+.promo-box p {
+    color: #053b05;
+    /* verde escuro */
 }
 
 /* --- Rodapé (Conforme solicitado) --- */
